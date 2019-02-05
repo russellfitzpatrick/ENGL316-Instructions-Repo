@@ -1,0 +1,7 @@
+:root {
+    --primary: var(--pink);
+}
+
+.bg-primary {
+    background-color: var(--primary) !important;
+}
