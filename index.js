@@ -1,3 +1,8 @@
+const personalization = {
+	"first-name": "John",
+	"last-name": "Doe"
+}
+
 var HeartsBackground = {
 	heartHeight: 60,
 	heartWidth: 64,
@@ -59,6 +64,15 @@ var HeartsBackground = {
 	}
 };
 
+function initializeNames() {
+	for (var key of Object.keys(personalization)) {
+		document.body.innerHTML = document.body.innerHTML.replace("{{" + key + "}}", personalization[key]);
+	}
+}
+
 $(document).ready(function () {
+	initializeNames();
+
 	HeartsBackground.initialize();
+
 });
