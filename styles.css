@@ -25,3 +25,46 @@
     bottom: 0;
     z-index: -1;
 }
+
+.content {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.content > * {
+    flex: 0 0 auto;
+}
+
+.main-area {
+    /* background-color: rgba(255, 255, 255, 0.3); */
+    background-color: white;
+    min-height: 250px;
+    padding-top: 25px;
+}
+
+.heart-background {
+    background-image: url("http://i58.tinypic.com/ntnw5.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 10vh;
+}
+
+.center-content {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+}
+
+.giant-header {
+    font-size: 300%;
+    margin-top: -20vh;
+}
+
+.fill-vertical {
+    flex: 1 0 auto;
+}
